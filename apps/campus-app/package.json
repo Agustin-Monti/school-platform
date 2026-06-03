@@ -1,0 +1,36 @@
+{
+  "name": "@school/campus-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@school/database": "*",
+    "@school/ui": "*",
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.49.1",
+    "date-fns": "^3.6.0",
+    "framer-motion": "^11.18.2",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^0.344.0",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.75.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@school/config": "*",
+    "@types/node": "^20.19.41",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.2"
+  }
+}
