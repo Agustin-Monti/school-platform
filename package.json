@@ -1,0 +1,31 @@
+{
+  "name": "school-platform",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "clean": "turbo clean",
+    "db:generate": "turbo db:generate",
+    "db:push": "turbo db:push",
+    "db:studio": "turbo db:studio"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "prettier": "^3.7.4",
+    "turbo": "^2.9.12",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.6.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.105.4"
+  }
+}
