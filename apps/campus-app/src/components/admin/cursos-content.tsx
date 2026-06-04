@@ -27,7 +27,7 @@ type Curso = {
 type Teacher = {
   id: string
   speciality: string
-  profiles: { full_name: string }
+  profiles: { full_name: string } | null
 }
 
 type Props = {

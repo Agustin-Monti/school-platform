@@ -43,9 +43,14 @@ export default async function CursosPage() {
     .order('division')
 
   // Obtener profesores disponibles para el formulario
-  const { data: teachers } = await supabase
-    .from('teachers')
-    .select('id, speciality, profiles (full_name)')
+  const { data: teachersRaw } = await supabase
+  .from('teachers')
+  .select('id, speciality, profiles (full_name)')
 
-  return <CursosContent cursos={cursos || []} teachers={teachers || []} />
+  const teachers = (teachersRaw || []).map((t: any) => ({
+    ...t,
+    profiles: Array.isArray(t.profiles) ? t.profiles[0] : t.profiles
+  }))
+
+  return <CursosContent cursos={cursos || []} teachers={teachers} />
 }
