@@ -316,7 +316,7 @@ export default function RegistroPage() {
                   : 'Un administrador revisará tu solicitud.'}
               </p>
               <Link
-                href="http://localhost:3001/login"
+                href="https://school-platform-campus-app.vercel.app/login"
                 className="inline-block w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-medium hover:from-blue-700 transition-all shadow-lg"
               >
                 Ir al Campus Virtual
@@ -328,7 +328,7 @@ export default function RegistroPage() {
           {paso !== 'completado' && (
             <div className="mt-6 text-center text-sm text-gray-500">
               ¿Ya tenés cuenta?{' '}
-              <Link href="http://localhost:3001/login" className="text-blue-600 hover:underline font-medium">
+              <Link href="https://school-platform-campus-app.vercel.app/login" className="text-blue-600 hover:underline font-medium">
                 Iniciar Sesión
               </Link>
             </div>
