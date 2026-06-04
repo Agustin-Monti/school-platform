@@ -230,7 +230,7 @@ export default function LoginPage() {
 
           {/* Footer */}
           <div className="mt-6 text-center text-sm text-gray-500">
-            <Link href="http://localhost:3000" className="hover:text-gray-700 transition-colors">
+            <Link href="https://school-platform-public-website.vercel.app/" className="hover:text-gray-700 transition-colors">
               ← Volver al sitio principal
             </Link>
           </div>
