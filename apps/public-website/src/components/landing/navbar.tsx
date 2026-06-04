@@ -109,7 +109,7 @@ export function Navbar() {
               )
             })}
             <Link
-              href="http://localhost:3001/login"
+              href="https://school-platform-campus-app.vercel.app/login"
               className={`text-base font-medium font-poppins transition-colors hover:text-amber-500 ${
                 hasDarkBg ? 'text-white' : 'text-gray-700'
               }`}
@@ -157,7 +157,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link
-              href="http://localhost:3001/login"
+              href="https://school-platform-campus-app.vercel.app/login"
               onClick={() => setMobileOpen(false)}
               className={`block px-4 py-3 rounded-xl text-lg font-medium font-poppins transition-colors ${
                 hasDarkBg
